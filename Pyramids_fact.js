@@ -10,7 +10,7 @@ btn.onclick = async () => {
     btn.disabled = true;
 
     try {
-        const r = await fetch('pyramids-facts.json');
+        const r = await fetch('https://zirnakovaliza-boop.github.io/pyramids-facts/');
         if (!r.ok) throw new Error('Сервер не отвечает');
         const facts = await r.json();
 
